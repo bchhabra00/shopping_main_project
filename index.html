@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Website</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Shopping website</h1>
+	<nav class="width">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Shopping</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+    <div id="container">
+      <p id="time"></p>
+  </div>
+
+<form id="add-to-cart">
+<div id="item">
+                    <h2>Shoes</h2>
+                    <div id="info">
+                    <span>Price: $90/pair</span>
+                    </div>
+        
+                    <div id="order">
+                    <label for="quantity">Quantity desired:</label>
+                    <input type="number" min="0" id="quantity" size="3" placeholder="0">
+                    </div>
+  </div>
+
+<div id="item2">
+                    <h2>Clothes</h2>
+                    <div id="info">
+                    <span>price: $40/pair</span>
+                    </div>
+        
+                    <div id="order">
+                    <label for="quantity">Quantity desired:</label>
+                    <input type="number" min="0" id="quantity2" size="3" placeholder="0">
+                    </div>
+  </div>
+  <div id="item3">
+                    <h2>Watches</h2>
+                    <div id="info">
+                    <span>Price: $80/pair</span>
+                    </div>
+        
+                    <div id="order">
+                    <label for="quantity">Quantity desired:</label>
+                    <input type="number" min="0" id="quantity3" size="3" placeholder="0">
+                    </div>
+  </div>
+
+  <div class="province">
+                        <label for="state">State (required):</label>
+                        <select id="stateselect">
+                            <option value="">- select -</option>
+                            <option value="ON">Ontario(5% tax)</option>
+                            <option value="BC">British Columbia(3.2% tax)</option>
+                            <option value="OT">Ottawa</option>
+                            <option value="MT">Manitoba(2.5% tax)</option>
+                        </select>
+                    </div>
+    <div class="method">
+                        <h2>Shipping</h2><br>
+                        <input type="radio" value="pickup" name="shipmethod"  id="pickup" checked> <label>Pickup (free)</label><br>
+            
+                        <input type="radio" value="mail"name="shipmethod"  id="mail"> <label >Canada Mail ($2/item)</label><br>
+            
+                        <input type="radio" value="ups" name="shipmethod"  id="ups"> <label >UPS ($3/item)</label>
+                    </div>
+
+
+      <div class="special">
+                        <h2>Special:</h2><br>
+                        <input type="checkbox" value="YES"  id="gift"> <label >This is a gift (include a card)</label><br>
+            
+                        <input type="checkbox" value="YES" name="email" id="email"> <label>Sign up for the shopping mailing list</label><br>
+            
+                        <input type="checkbox" value="YES" name="recipes" id="discount"> <label >Sign Up for the special discount</label>
+                    </div>
+         <div class="Total">
+                    
+                        <label>Click to estimate:</label><br>
+                        <input type="submit" value="Estimate Total" id="btn-estimate">
+                         <p id="estimate"></p>
+        </div>
+
+          <div>              <!-- <input type="text" id="estimate" placeholder="$0.00"> -->
+          <label>Select the currency  you want to convert to and then click on Estimate Total again.</label>
+                     <select id="to">
+                            <option value="select" selected>Select</option>
+                            <option value="AUD">Austalian Dollar</option>
+                            <option value="BGN">Bulgarian Lev</option>
+                            <option value="CAD">Canadian Dollar</option>
+                            <option value="CHF">Swiss Franc</option>
+                            <option value="INR" >Indian Rupee</option>
+                            <option value="DKK">Danish Krone</option>
+                            <option value="GBP">Pound Sterling</option>
+                            <option value="ILS">Israeli New Shakel</option>
+                            <option value="JPY">Japneese Yen</option>
+                            <option value="PHP">Phillipene Peso</option>
+                            <option value="RUB">Russian Ruble</option>
+                            <option value="USD">US Dollar</option>
+                            
+
+
+                     </select>               
+        </div>
+</form>
+        <!-- <button  id ="convert">Convert Currency</button> -->
+ <p id="output"></p>
+
+                        <div id="results"></div>
+                    </div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
